@@ -500,13 +500,6 @@ main
 </details>
 
   </TabItem>
-  <TabItem value="snap" label="Snap">
-
-```bash
-snap install wash --devmode --edge
-```
-
-  </TabItem>
   <TabItem value="mac" label="MacOS">
 
 ```bash
@@ -526,7 +519,13 @@ choco install wash
 If your platform isn't listed, `wash` can be installed with `cargo` and a Rust toolchain.
 
 ```bash
-cargo install wash-cli
+cargo install --locked wash-cli
+```
+
+If you have [`cargo-binstall`][cargo-binstall] installed, you can install even faster:
+
+```bash
+cargo binstall wash-cli
 ```
 
   </TabItem>
@@ -588,3 +587,5 @@ If wash is installed correctly, you will see a printout of all available command
 If you ever need more detail on a specific command or sub-command just run `wash <command> --help`.
 
 Now that `wash` is installed, let's [get started](/docs/tour/hello-world).
+
+[cargo-binstall]: https://crates.io/crates/cargo-binstall
